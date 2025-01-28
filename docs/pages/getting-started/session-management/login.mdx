@@ -186,7 +186,7 @@ by passing the target URL as `redirectTo` in the sign-in options.
 <Code.Next>
 
 ```tsx filename="app/components/signin-button.tsx" {8}
-import { signIn } from "@/auth.ts"
+import { signIn } from "@/auth"
 
 export function SignIn() {
   return (
@@ -296,7 +296,7 @@ Signing out can be done similarly to signing in. Most frameworks offer both a cl
 To sign out users with a form action, you can build a button that calls the exported signout function from your Auth.js config.
 
 ```tsx filename="app/components/signout-button.tsx" {8}
-import { signOut } from "@/auth.ts"
+import { signOut } from "@/auth"
 
 export function SignOut() {
   return (
